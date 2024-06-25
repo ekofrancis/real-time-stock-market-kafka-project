@@ -13,13 +13,6 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 Start Apache Kafka
 bin/kafka-server-start.sh config/server.properties
 
-Setup the $PATH environment variable
- nano ~/.bashrc
- PATH="$PATH:~/kafka_2.12-3.6.2/bin"
-PATH="$PATH:/mnt/c/Users/5ran6/Desktop/Projects/real-time-stock-market-kafka-project/kafka_2.12-3.6.2/bin"
-
- source ~/.bashrc
-
 Create topic
 bin/kafka-topics.sh --create --topic stock-prices --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 
